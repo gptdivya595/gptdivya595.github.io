@@ -474,14 +474,16 @@ nav a:hover {
 
 .carousel-track {
   display: grid;
-  grid-auto-columns: minmax(300px, 38%);
+  grid-auto-columns: calc((100% - 32px) / 3);
   grid-auto-flow: column;
   gap: 16px;
   overflow-x: auto;
   padding: 2px 2px 20px;
+  overscroll-behavior-inline: contain;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scrollbar-color: var(--accent) rgba(244, 242, 234, 0.12);
+  -webkit-overflow-scrolling: touch;
 }
 
 .carousel-track.is-wheel-active {
@@ -531,8 +533,10 @@ nav a:hover {
 
 .artifact-card h3 {
   margin-top: 18px;
-  font-size: clamp(1.5rem, 2.4vw, 2.35rem);
+  font-size: 2.1rem;
   line-height: 1.08;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .artifact-card p {
@@ -766,20 +770,41 @@ nav a:hover {
 
 .proof-tile {
   display: flex;
-  min-height: 190px;
+  min-height: 260px;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 22px;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(244, 242, 234, 0.055);
   text-decoration: none;
 }
 
+.proof-tile > img {
+  width: 100%;
+  height: 155px;
+  flex: 0 0 auto;
+  border-bottom: 1px solid var(--line);
+  object-fit: cover;
+  object-position: center top;
+}
+
+.proof-tile > span,
+.proof-tile > strong {
+  margin-inline: 22px;
+}
+
+.proof-tile > span {
+  margin-top: 18px;
+}
+
+.proof-tile > strong {
+  margin-bottom: 22px;
+}
+
 .proof-tile-media {
   grid-row: span 2;
-  padding: 0;
-  overflow: hidden;
 }
 
 .proof-tile-media img {
@@ -1247,6 +1272,10 @@ nav a:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .carousel-track {
+    grid-auto-columns: calc((100% - 16px) / 2);
+  }
+
   .proof-grid div:nth-child(2) {
     border-right: 0;
   }
@@ -1391,11 +1420,15 @@ nav a:hover {
   }
 
   .carousel-track {
-    grid-auto-columns: minmax(280px, 88%);
+    grid-auto-columns: 100%;
   }
 
   .artifact-card {
     min-height: 330px;
+  }
+
+  .artifact-card h3 {
+    font-size: 1.75rem;
   }
 
   .proof-grid div {
@@ -1445,6 +1478,7 @@ nav a:hover {
 
   .work-card-large .work-media,
   .work-media,
+  .proof-tile > img,
   .proof-tile-media img,
   .deck-card img,
   .deck-card-tall img {
