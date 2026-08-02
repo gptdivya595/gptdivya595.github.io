@@ -7,11 +7,13 @@ The site is designed to show proof quickly: live AI MVPs, PRDs, product teardown
 ## Highlights
 
 - **Hero message:** AI MVPs, not decks.
+- **Recognition:** NextLeap Top PM Fellow (Feb - May 2026); Spotify Discovery Compass is the flagship capstone case study.
+- **Current role:** User Growth Intern at Paytm (One97 Communications), alongside project delivery at Streamline Refrigeration.
 - **Live AI work:** RAG chatbot, MCP review agent, ChatGPT voice input MVP.
-- **Product artifacts:** PRD, product teardown, product strategy, metrics, product design, and research decks.
-- **Role fit:** PRDs, user stories, workflows, acceptance criteria, sprint tracking, UAT, release notes, market research, competitor analysis, customer feedback, and product metrics.
-- **Execution background:** 2.7 years across Jira-based tracking, dashboards, vendors, contractors, budgeting support, and cross-functional delivery.
-- **Education:** Ongoing MBA at Manipal University plus B.Tech in Electrical and Electronics Engineering.
+- **Product artifacts:** capstone case study, PRD, product teardown, product strategy, metrics, product design, and user research decks.
+- **Role fit:** PRDs, user stories, workflows, acceptance criteria, sprint tracking, UAT, release notes, market research, competitor analysis, customer feedback, KPI trees, and product metrics.
+- **Execution background:** 2.7+ years across Jira-based tracking, dashboards, vendors, contractors, budgeting support, and cross-functional delivery.
+- **Education:** Ongoing MBA at Manipal Academy of Higher Education, Udupi, plus B.Tech in Electrical and Electronics Engineering.
 
 ## Built With
 
@@ -43,6 +45,7 @@ No Node app, bundler, framework, or build step is required.
 
 | Project | Evidence |
 |---|---|
+| Spotify Discovery Compass (Top PM Fellow capstone) | Capstone deck, NextLeap portfolio |
 | ChatGPT Voice Input MVP | Live MVP, GitHub repo, LinkedIn post, PRD deck |
 | Groww Mutual Fund FAQ Chatbot | Live RAG demo, GitHub repo, LinkedIn post |
 | Weekly Product Review Pulse Agent | Live MCP agent, GitHub repo, LinkedIn post |

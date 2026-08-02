@@ -203,6 +203,50 @@ nav a:hover {
   font-weight: 850;
 }
 
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(244, 242, 234, 0.05);
+  color: var(--paper-soft);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badge-award {
+  border-color: rgba(67, 214, 180, 0.55);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.badge-award::before {
+  content: "★";
+  margin-right: 7px;
+  font-size: 0.9rem;
+}
+
+.badge-paytm {
+  border-color: rgba(96, 165, 250, 0.55);
+  background: rgba(96, 165, 250, 0.12);
+  color: #93c5fd;
+}
+
+.badge-mba {
+  border-color: rgba(250, 204, 21, 0.5);
+  background: rgba(250, 204, 21, 0.1);
+  color: #fde68a;
+}
+
 .hero-subtitle {
   max-width: 650px;
   margin-top: 22px;
@@ -553,6 +597,17 @@ nav a:hover {
   font-weight: 850;
 }
 
+.artifact-capstone {
+  border-color: rgba(67, 214, 180, 0.45);
+  background:
+    linear-gradient(150deg, rgba(67, 214, 180, 0.34), rgba(67, 214, 180, 0.06) 58%),
+    var(--panel-2);
+}
+
+.artifact-capstone span {
+  color: var(--accent);
+}
+
 .artifact-prd {
   background:
     linear-gradient(145deg, rgba(67, 214, 180, 0.22), rgba(244, 242, 234, 0.045) 54%),
@@ -687,6 +742,44 @@ nav a:hover {
   background:
     linear-gradient(130deg, rgba(67, 214, 180, 0.14), transparent 46%),
     rgba(244, 242, 234, 0.05);
+}
+
+.work-card-capstone {
+  border-color: rgba(67, 214, 180, 0.42);
+  background:
+    linear-gradient(130deg, rgba(67, 214, 180, 0.2), transparent 52%),
+    rgba(244, 242, 234, 0.05);
+}
+
+.work-card-capstone .pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 13px;
+  border: 1px solid rgba(67, 214, 180, 0.5);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.work-card-capstone .pill::before {
+  content: "★";
+  margin-right: 7px;
+}
+
+.work-card-capstone .work-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  background: #0a1512;
+}
+
+.work-card-capstone .work-media img {
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .work-media {
