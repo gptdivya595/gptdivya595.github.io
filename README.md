@@ -22,7 +22,8 @@ This is intentionally a static GitHub Pages site.
 - `index.html`
 - `styles.css`
 - `script.js`
-- local images, deck thumbnails, and video assets under `assets/`
+- `robots.txt`, `sitemap.xml`, `favicon.svg`, `favicon.ico`
+- local images, deck thumbnails, and video assets under `assets/` (including `assets/og-cover.jpg` for social previews)
 
 No Node app, bundler, framework, or build step is required.
 
